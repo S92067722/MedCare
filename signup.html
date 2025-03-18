@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="container">
+        <form action="signup.php" method="POST">
+            <label>User Role</label><br>
+            <select id="role" name="role" required>
+                <option value="" disabled selected>Select User Role</option>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+                <option value="doctor">Doctor</option>
+                <option value="nurse">Nurse</option>
+            </select><br>
+
+            <label>Name</label>
+            <input type="text" name="username" placeholder="User Name" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+
+            <label>Gender</label><br>
+            <input id="ma" type="radio" name="gender" value="m" required>Male
+            <input id="fe" type="radio" name="gender" value="f" required>Female<br>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email ID" required>
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+
+            <input id="submit" type="submit" value="Submit" name="submit">
+        </form>
+    </div>
+</body>
+</html>
